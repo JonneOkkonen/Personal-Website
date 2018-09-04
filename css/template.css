@@ -1,0 +1,27 @@
+/* Jumbotron */
+.jumbotron {
+    /* Background */
+    background-image: url("../img/programming_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(1.5px);
+    background-position: center;
+    
+    /* Position */
+    position: fixed;
+    left: -1px;
+    right: -1px;
+    top: -1px;
+    z-index: 1;
+    height: 30%;
+    width: 100%;
+}
+/* Jumbotron MainHeading */
+.mainHeading {
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 10%;
+    z-index: 9999;
+    text-align: center;
+}
