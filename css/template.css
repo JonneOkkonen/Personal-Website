@@ -1,19 +1,19 @@
 /* Jumbotron */
 .jumbotron {
     /* Background */
-    background-image: url("../img/programming_background.jpg");
+    background-image: url("../img/jumbotron_background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    filter: blur(1.5px);
+    /*filter: blur(0px);*/
     background-position: center;
     
     /* Position */
     position: fixed;
-    left: -1px;
-    right: -1px;
-    top: -1px;
+    left: -0px;
+    right: -0px;
+    top: -0px;
     z-index: 1;
-    height: 30%;
+    height: 35%;
     width: 100%;
 }
 /* Jumbotron MainHeading */
@@ -21,7 +21,7 @@
     position: fixed;
     width: 100%;
     left: 0px;
-    top: 10%;
+    top: 11%;
     z-index: 9999;
     text-align: center;
 }
