@@ -16,7 +16,7 @@
     height: 35%;
     width: 100%;
 }
-/* Jumbotron MainHeading */
+/* MainHeading */
 .mainHeading {
     position: fixed;
     width: 100%;
@@ -24,4 +24,35 @@
     top: 11%;
     z-index: 9999;
     text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    right: 0px;
+    z-index: 9999;
+}
+#navbarTitle {
+    float: left;
+    margin-left: 10%;
+}
+.navbarItem {
+    float: right;
+    margin-right: 5%;
+    margin-top: 3px;
+}
+#navbarTitleText {
+    font-size: 20px;
+}
+.navbarText {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: "Arial Black", sans-serif;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+.navbarText:hover {
+    font-size: 16px;
 }
