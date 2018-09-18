@@ -1,25 +1,18 @@
-/* Jumbotron */
-.jumbotron {
-    /* Background */
+body {
+    margin: 0px;
+}
+.header {
     background-image: url("../img/jumbotron_background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     /* filter: blur(0px); */
     background-position: center;
-    
-    /* Position */
-    position: fixed;
-    left: -0px;
-    right: -0px;
-    top: -0px;
-    z-index: 1;
-    height: 35%;
-    width: 100%;
+    height: 400px;
     min-height: 250px;
+    text-align: center;
 }
-/* MainHeading */
 .mainHeading {
-    position: fixed;
+    position: absolute;
     width: 100%;
     left: 0px;
     top: 12%;
@@ -30,12 +23,11 @@
     font-size: 20px;
     color: white;
 }
-
-/* Navbar */
 .navbar {
-    position: fixed;
+    position: absolute;
     width: 100%;
     right: 0px;
+    top: 5px;
     z-index: 9999;
 }
 #navbarTitle {
@@ -61,4 +53,18 @@
 }
 .navbarText:hover {
     font-size: 16px;
+}
+.section {
+    background-color: darkorange;
+    width: 100%;
+    height: 200px;
+}
+#section2 {
+    background-color: aqua;
+}
+.footer {
+    background-color: aquamarine;
+    text-align: center;
+    height: 50px;
+    padding-top: 5px;
 }
