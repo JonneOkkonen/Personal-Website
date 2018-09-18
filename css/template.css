@@ -30,20 +30,21 @@ body {
     width: 100%;
     z-index: 9999;
 }
-#navbarTitle {
+.navbarTitle {
     float: left;
+    display: block;
     margin-left: 10%;
+    font-size: 20px;
+    font-family: "Helvetica", sans-serif;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
 }
 .navbarItem {
     float: right;
+    display: block;
     margin-right: 5%;
     margin-top: 3px;
-}
-#navbarTitleText {
-    font-size: 20px;
-}
-.navbarText {
-    margin-top: 0px;
     margin-bottom: 0px;
     font-family: "Helvetica", sans-serif;
     font-size: 15px;
@@ -51,8 +52,20 @@ body {
     color: white;
     text-decoration: none;
 }
-.navbarText:hover {
+.navbarItem:hover {
     font-size: 16px;
+}
+/* Make Navbar Responsive (under 500px) */
+@media screen and (max-width: 500px) {
+    .navbarTitle {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+    .navbarItem {
+        float: none;
+        width: 100%;
+    }
 }
 .section {
     background-color: darkorange;
