@@ -24,7 +24,11 @@ body {
     color: white;
 }
 #mainHeading {
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+}
+#description {
+    margin: 0px;
+    font-weight: 600;
 }
 .socialMediaLogos {
     max-width: 25px;
