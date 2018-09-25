@@ -1,8 +1,11 @@
 body {
     margin: 0px;
+    font-family: "Helvetica", sans-serif;
+    font-size: 15px;
+    font-weight: 900;
 }
 .header {
-    background-image: url("../img/jumbotron_background.jpg");
+    background-image: url("../img/header_background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     /* filter: blur(0px); */
@@ -18,13 +21,30 @@ body {
     top: 12%;
     z-index: 9999;
     text-align: center;
-    font-family: "Helvetica", sans-serif;
-    font-weight: 900;
     font-size: 20px;
     color: white;
 }
-.navbar {
+.button {
+    background-color: #fed136;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #fed136;
+    border-radius: 5px;
     padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Helvetica", sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    color: white;
+}
+.button:hover {
+    background-color: #feba36;
+    border-color: #feba36;
+}
+.navbar {
+    padding-top: 10px;
     margin: auto;
     max-width: 1280px;
     width: 100%;
@@ -35,9 +55,7 @@ body {
     display: block;
     margin-left: 10%;
     font-size: 20px;
-    font-family: "Helvetica", sans-serif;
-    font-weight: 900;
-    color: white;
+    color: #fed136;
     text-decoration: none;
 }
 .navbarItem {
@@ -46,9 +64,6 @@ body {
     margin-right: 5%;
     margin-top: 3px;
     margin-bottom: 0px;
-    font-family: "Helvetica", sans-serif;
-    font-size: 15px;
-    font-weight: 900;
     color: white;
     text-decoration: none;
 }
@@ -79,15 +94,19 @@ body {
     width: 100%;
     height: auto;
     max-width: 800px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 /* Section1 Custom */
 #section1 {
     padding: 5px;
     padding-bottom: 20px;
     height: auto;
+    background-color: white;
 }
 #content1 {
     height: 150px;
+    color: #a6a6a6;
 }
 .profileImg {
     max-width:100%; 
@@ -98,12 +117,21 @@ body {
 }
 /* Section 2 */
 #section2 {
-    background-color: aqua;
+    background-color: lightgray;
+}
+/* Section 3 */
+#section3 {
+    background-color: white;
+}
+/* Section 4 */
+#section4 {
+    background-color: lightgray;
 }
 /* Footer */
 .footer {
-    background-color: aquamarine;
+    background-color: #17283c;
     text-align: center;
     height: 50px;
     padding-top: 5px;
+    color: white;
 }
