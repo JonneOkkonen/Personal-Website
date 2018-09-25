@@ -99,6 +99,12 @@ body {
     width: 100%;
     height: 200px;;
 }
+.sectionTitle {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 28px;
+    margin: 0px;
+}
 /* Content Default */
 .content {
     margin: auto;
@@ -137,6 +143,8 @@ body {
 /* Section 4 */
 #section4 {
     background-color: #f7f7f7;
+    padding: 0px;
+    margin: 0px;
 }
 /* Footer */
 .footer {
@@ -145,4 +153,5 @@ body {
     height: 50px;
     padding-top: 5px;
     color: white;
+    font-weight: 500;
 }
