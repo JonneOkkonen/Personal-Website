@@ -152,6 +152,28 @@ body {
 /* Section 3 */
 #section3 {
     background-color: white;
+    height: auto;
+    text-align: center;
+}
+.application {
+    display: inline-block;
+    text-align: center;
+    width: 186px;
+    margin-bottom: 20px;
+}
+.applicationName {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.applicationImg {
+    border-radius: 50%;
+    width: 150px;
+    margin: 18px;
+    margin-bottom: 0px;
+}
+#applicationsButton {
+    margin-bottom: 20px;
 }
 /* Section 4 */
 #section4 {
