@@ -180,7 +180,47 @@ body {
     background-color: #f7f7f7;
     padding: 0px;
     margin: 0px;
+    padding-bottom: 10px;
     box-shadow: 0 0px 10px 0 rgba(0, 0, 0, .2);
+    height: auto;
+    text-align: center;
+}
+.contactMeImg {
+    display: inline-block;
+    margin: 20px;
+    margin-right: 50px;
+}
+#contactMeImg {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.contactMeContent {
+    display: inline-block;
+    margin-top: 40px;
+    vertical-align: top;
+}
+.contactMeItem {
+    text-align: left;
+    width: 300px;
+    margin: auto;
+    margin-top: 5px;
+    position: flex;
+    align-items: center;
+}
+.contactMeIcons{
+    max-width: 25px;
+    max-height: 22px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+#linkedInIcon {
+    vertical-align: baseline;
+}
+.contactMeText {
+    margin: 0px;
+    font-weight: 600;
 }
 /* Footer */
 .footer {
