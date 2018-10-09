@@ -88,7 +88,29 @@ body {
     display: none;
     color: #fed136;
 }
-
+/* Make Navbar Responsive (under 500px) */
+@media screen and (max-width: 500px) {
+    .navbarTitle {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+    .navbarItem {
+        margin-right: 0%;
+        width: 100%;
+    }
+    .navbar .icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 15px;
+    }
+    .navbar.responsive .navbarItem {
+        display: none;
+        text-align: center;
+    }
+}
 /* Section Default */
 .section {
     background-color: darkorange;
@@ -134,6 +156,20 @@ body {
     border-radius: 50%;
     float: left;
     margin-right: 20px;
+}
+/* Make ProfileImg Responsive (under 500px) */
+@media screen and (max-width: 500px) {
+    .profileImgContainer {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    .profileImg {
+        float: none;
+        margin-right: 0px;
+    }
 }
 /* Section 2 */
 #section2 {
@@ -230,37 +266,17 @@ body {
     color: white;
     font-weight: 500;
 }
-/* Make Navbar Responsive (under 500px) */
-@media screen and (max-width: 500px) {
-    .navbarTitle {
-        float: none;
-        width: 100%;
-        margin-left: 0;
-    }
-    .navbarItem {
-        margin-right: 0%;
-        width: 100%;
-    }
-    .navbar .icon {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin: 15px;
-    }
-    .navbar.responsive .navbarItem {
-        display: none;
-        text-align: center;
-    }
-    .profileImgContainer {
+/* Make ContactMe Responsive (under 500px) */
+@media screen and (max-width: 590px) {
+    .contactMeImg {
+        margin-right: 20px;
         display: inline-block;
-        width: 100%;
-        text-align: center;
-        height: 150px;
-        margin-bottom: 20px;
     }
-    .profileImg {
-        float: none;
-        margin-right: 0px;
+    .contactMeItem {
+        text-align: center;
+    }
+    .contactMeContent {
+        margin-top: 0px;
+        margin-bottom: 20px;
     }
 }
