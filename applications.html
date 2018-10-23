@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/template.css">
+    <link rel="stylesheet" type="text/css" href="css/applications.css">
+    <title>Jonne Okkonen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="navbar responsive" id="TopNav">
+            <a href="index.html" class="navbarTitle">Navbar Title</a>
+            <a href="#" class="navbarItem">Item 1</a>
+            <a href="#" class="navbarItem">Item 2</a>
+            <a href="#" class="navbarItem">Item 3</a>
+            <a href="javascript:void(0);" class="icon" onclick="collapseNavbar()"><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="headerContent">
+            <h1 id="mainHeading">Applications</h1>
+            <p id="description">Description</p><br>
+            <a href="#"><img src="img/google-play-logo.png" alt="google play icon" class="socialMediaLogos" id="appStoreIcon"/></a>
+            <a href="#"><img src="img/github-icon.png" alt="github icon" class="socialMediaLogos" id="appStoreIcon"/></a>
+        </div>
+    </div>
+    <div class="section" id="section3">
+        <div class="application">
+            <img src="img/placeholder.png" class="applicationImg" alt="applicationImg"/>
+            <p class="applicationName">Application Name</p>
+            <a href="#"><img src="img/github-icon.png" alt="github icon" class="socialMediaLogos"/></a>
+            <a href="#"><img src="img/google-play-logo.png" alt="google play icon" class="socialMediaLogos"/></a><br>
+            <a href="#"><button type="button" class="button" id="applicationDetail">More</button></a>
+        </div>
+        <div class="application">
+            <img src="img/placeholder.png" class="applicationImg" alt="applicationImg"/>
+            <p class="applicationName">Application Name 2</p>
+            <a href="#"><img src="img/github-icon.png" alt="github icon" class="socialMediaLogos"/></a>
+            <a href="#"><img src="img/google-play-logo.png" alt="google play icon" class="socialMediaLogos"/></a><br>
+            <a href="#"><button type="button" class="button" id="applicationDetail">More</button></a>
+        </div>
+        <div class="application">
+            <img src="img/placeholder.png" class="applicationImg" alt="applicationImg"/>
+            <p class="applicationName">Application Name 3</p>
+            <a href="#"><img src="img/github-icon.png" alt="github icon" class="socialMediaLogos"/></a>
+            <a href="#"><img src="img/google-play-logo.png" alt="google play icon" class="socialMediaLogos"/></a><br>
+            <a href="#"><button type="button" class="button" id="applicationDetail">More</button></a>
+        </div>
+        <div class="application">
+            <img src="img/placeholder.png" class="applicationImg" alt="applicationImg"/>
+            <p class="applicationName">Application Name 4</p>
+            <a href="#"><img src="img/github-icon.png" alt="github icon" class="socialMediaLogos"/></a>
+            <a href="#"><img src="img/google-play-logo.png" alt="google play icon" class="socialMediaLogos"/></a><br>
+            <a href="#"><button type="button" class="button" id="applicationDetail">More</button></a>
+        </div>
+        <div class="application">
+            <img src="img/placeholder.png" class="applicationImg" alt="applicationImg"/>
+            <p class="applicationName">Application Name 5</p>
+            <a href="#"><img src="img/github-icon.png" alt="github icon" class="socialMediaLogos"/></a>
+            <a href="#"><img src="img/google-play-logo.png" alt="google play icon" class="socialMediaLogos"/></a><br>
+            <a href="#"><button type="button" class="button" id="applicationDetail">More</button></a>
+        </div>
+        <div class="application">
+            <img src="img/placeholder.png" class="applicationImg" alt="applicationImg"/>
+            <p class="applicationName">Application Name 6</p>
+            <a href="#"><img src="img/github-icon.png" alt="github icon" class="socialMediaLogos"/></a>
+            <a href="#"><img src="img/google-play-logo.png" alt="google play icon" class="socialMediaLogos"/></a><br>
+            <a href="#"><button type="button" class="button" id="applicationDetail">More</button></a>
+        </div>
+        <div class="application">
+            <img src="img/placeholder.png" class="applicationImg" alt="applicationImg"/>
+            <p class="applicationName">Application Name 7</p>
+            <a href="#"><img src="img/github-icon.png" alt="github icon" class="socialMediaLogos"/></a>
+            <a href="#"><img src="img/google-play-logo.png" alt="google play icon" class="socialMediaLogos"/></a><br>
+            <a href="#"><button type="button" class="button" id="applicationDetail">More</button></a>
+        </div>
+        <div class="application">
+            <img src="img/placeholder.png" class="applicationImg" alt="applicationImg"/>
+            <p class="applicationName">Application Name 8</p>
+            <a href="#"><img src="img/github-icon.png" alt="github icon" class="socialMediaLogos"/></a>
+            <a href="#"><img src="img/google-play-logo.png" alt="google play icon" class="socialMediaLogos"/></a><br>
+            <a href="#"><button type="button" class="button" id="applicationDetail">More</button></a>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <p>© 2018 Jonne Okkonen</p>
+    </div>
+    <script>
+        function collapseNavbar() {
+            var x = document.getElementById("TopNav");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+</html>
