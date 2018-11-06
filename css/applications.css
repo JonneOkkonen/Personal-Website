@@ -68,6 +68,30 @@
     height: 333px;
     width: 5%;
 }
+/* Make contentFrame Responsive (under 400px) */
+@media screen and (max-width: 500px) {
+    .contentFrame {
+        width: 80%;
+    }
+    .leftArrow {
+        width: 10%;
+    }
+    .rightArrow {
+        width: 10%;
+    }
+}
+/* Make contentFrame Responsive (under 600px) */
+@media screen and (max-width: 600px) {
+    .contentFrame {
+        width: 86%;
+    }
+    .leftArrow {
+        width: 7%;
+    }
+    .rightArrow {
+        width: 7%;
+    }
+}
 #arrowLeft {
     width: 100%;
     height: 100%;
