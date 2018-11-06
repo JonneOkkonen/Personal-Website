@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/template.css">
+    <link rel="stylesheet" type="text/css" href="css/applications.css">
+    <title>Jonne Okkonen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="navbar responsive" id="TopNav">
+            <a href="index.html" class="navbarTitle">Navbar Title</a>
+            <a href="#" class="navbarItem">Item 1</a>
+            <a href="#" class="navbarItem">Item 2</a>
+            <a href="applications.html" class="navbarItem">Applications</a>
+            <a href="javascript:void(0);" class="icon" onclick="collapseNavbar()"><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="headerContent">
+            <h1 id="mainHeading">Application Name</h1>
+            <p id="description">Description</p><br>
+        </div>
+    </div>
+    <div class="section" id="section1">
+        <div class="screenshots">
+            <div class="leftArrow">
+                <div class="arrowImg">
+                    <a href="javascript:void(0);" onclick="transformLeft()">
+                    <img src="img/ChevronLeftGray.png" alt="leftArrow" id="arrowLeft" onmouseover="LeftArrowHover(this)" onmouseout="LeftArrowNormal(this)"/></a>
+                </div>
+            </div>
+            <div class="contentFrame" id="contentFrame">
+                <div class="scrollableContent">
+                    <img src="img/placeholder.png" alt="application Screenshot" class="screenshotImg"/>
+                    <img src="img/placeholder.png" alt="application Screenshot" class="screenshotImg"/>
+                    <img src="img/placeholder.png" alt="application Screenshot" class="screenshotImg"/>
+                    <img src="img/placeholder.png" alt="application Screenshot" class="screenshotImg"/>
+                    <img src="img/placeholder.png" alt="application Screenshot" class="screenshotImg"/>
+                    <img src="img/placeholder.png" alt="application Screenshot" class="screenshotImg"/>
+                </div>
+            </div>
+            <div class="rightArrow">
+                <div class="arrowImg">
+                    <a href="javascript:void(0);" onclick="transformRight()">
+                    <img src="img/ChevronRightGray.png" alt="rightArrow" id="arrowRight" onmouseover="RightArrowHover(this)" onmouseout="RightArrowNormal(this)"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <p>© 2018 Jonne Okkonen</p>
+    </div>
+    <script>
+        // Collapse Navbar
+        function collapseNavbar() {
+            var x = document.getElementById("TopNav");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+        
+        // Transform Controls for Screenshot Viewer
+        function transformLeft() {
+            var element = document.getElementById("contentFrame");
+            element.scrollLeft -= 60;
+        }
+        function transformRight() {
+            var element = document.getElementById("contentFrame");
+            element.scrollLeft += 60;
+        }
+        
+        // ArrowLeft/Right Hover
+        function LeftArrowHover(x) {
+            x.src = "img/ChevronLeft.png";
+        }
+
+        function LeftArrowNormal(x) {
+            x.src = "img/ChevronLeftGray.png";
+        }
+        function RightArrowHover(x) {
+            x.src = "img/ChevronRight.png";
+        }
+
+        function RightArrowNormal(x) {
+            x.src = "img/ChevronRightGray.png";
+        }
+    </script>
+</body>
+</html>
