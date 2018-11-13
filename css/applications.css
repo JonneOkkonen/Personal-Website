@@ -1,3 +1,6 @@
+#description {
+    font-size: 16px;
+}
 #appStoreIcon {
     max-height: 40px;
     max-width: 40px;
@@ -55,12 +58,16 @@
     height: 350px;
     width: 1600px;
 }
+#mukesContent {
+    width: 1350px;
+}
 .screenshotImg {
     display: inline-block;
     float: left;
     width: 250px;
     height: 333px;
-    margin-left: 10px;
+    margin-left: -30px;
+    object-fit: contain;
 }
 .rightArrow {
     display: inline-block;

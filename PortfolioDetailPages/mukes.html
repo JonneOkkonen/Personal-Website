@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/template.css">
-    <link rel="stylesheet" type="text/css" href="css/applications.css">
+    <link rel="stylesheet" type="text/css" href="../css/template.css">
+    <link rel="stylesheet" type="text/css" href="../css/applications.css">
     <title>Jonne Okkonen</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,19 +11,18 @@
 <body>
     <div class="header">
         <div class="navbar responsive" id="TopNav">
-            <a href="index.html" class="navbarTitle">Navbar Title</a>
-            <a href="#" class="navbarItem">Item 1</a>
-            <a href="#" class="navbarItem">Item 2</a>
-            <a href="applications.html" class="navbarItem">Applications</a>
+            <a href="../index.html" class="navbarTitle">Jonne Okkonen</a>
+            <a href="#" class="navbarItem">About me</a>
+            <a href="../applications.html" class="navbarItem">Portfolio</a>
             <a href="javascript:void(0);" class="icon" onclick="collapseNavbar()"><i class="fa fa-bars"></i></a>
         </div>
         <div class="headerContent">
-            <h1 id="mainHeading">Application Name</h1>
-            <p id="description">Description</p><br>
-            <a href="#"><img src="img/google-play-logo.png" alt="google play icon" class="socialMediaLogos"/></a>
-            <a href="#" class="smallText">Google Play</a>
-            <a href="#"><img src="img/github-icon.png" alt="github icon" class="socialMediaLogos"/></a>
-            <a href="#" class="smallText">Source Code</a>
+            <h1 id="mainHeading">Mukes</h1>
+            <p id="description">Android</p><br>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.jonneokkonen.Mukes"><img src="../img/google-play-logo.png" alt="google play icon" class="socialMediaLogos"/></a>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.jonneokkonen.Mukes" class="smallText">Google Play</a>
+            <a target="_blank" href="https://github.com/JonneOkkonen/Mukes"><img src="../img/github-icon.png" alt="github icon" class="socialMediaLogos"/></a>
+            <a target="_blank" href="https://github.com/JonneOkkonen/Mukes" class="smallText">Source Code</a>
         </div>
     </div>
     <div class="section" id="section1">
@@ -31,23 +30,23 @@
             <div class="leftArrow">
                 <div class="arrowImg">
                     <a href="javascript:void(0);" onclick="transformLeft()">
-                    <img src="img/ChevronLeftGray.png" alt="leftArrow" id="arrowLeft" onmouseover="LeftArrowHover(this)" onmouseout="LeftArrowNormal(this)"/></a>
+                    <img src="../img/ChevronLeftGray.png" alt="leftArrow" id="arrowLeft" onmouseover="LeftArrowHover(this)" onmouseout="LeftArrowNormal(this)"/></a>
                 </div>
             </div>
             <div class="contentFrame" id="contentFrame">
-                <div class="scrollableContent">
-                    <img src="img/placeholder.png" alt="application Screenshot" class="screenshotImg"/>
-                    <img src="img/placeholder.png" alt="application Screenshot" class="screenshotImg"/>
-                    <img src="img/placeholder.png" alt="application Screenshot" class="screenshotImg"/>
-                    <img src="img/placeholder.png" alt="application Screenshot" class="screenshotImg"/>
-                    <img src="img/placeholder.png" alt="application Screenshot" class="screenshotImg"/>
-                    <img src="img/placeholder.png" alt="application Screenshot" class="screenshotImg"/>
+                <div class="scrollableContent" id="mukesContent">
+                    <img src="../img/mukesScreenshots/screenshot1.png" alt="application Screenshot" class="screenshotImg"/>
+                    <img src="../img/mukesScreenshots/screenshot2.png" alt="application Screenshot" class="screenshotImg"/>
+                    <img src="../img/mukesScreenshots/screenshot3.png" alt="application Screenshot" class="screenshotImg"/>
+                    <img src="../img/mukesScreenshots/screenshot4.png" alt="application Screenshot" class="screenshotImg"/>
+                    <img src="../img/mukesScreenshots/screenshot5.png" alt="application Screenshot" class="screenshotImg"/>
+                    <img src="../img/mukesScreenshots/screenshot6.png" alt="application Screenshot" class="screenshotImg"/>
                 </div>
             </div>
             <div class="rightArrow">
                 <div class="arrowImg">
                     <a href="javascript:void(0);" onclick="transformRight()">
-                    <img src="img/ChevronRightGray.png" alt="rightArrow" id="arrowRight" onmouseover="RightArrowHover(this)" onmouseout="RightArrowNormal(this)"/></a>
+                    <img src="../img/ChevronRightGray.png" alt="rightArrow" id="arrowRight" onmouseover="RightArrowHover(this)" onmouseout="RightArrowNormal(this)"/></a>
                 </div>
             </div>
         </div>
@@ -87,18 +86,18 @@
         
         // ArrowLeft/Right Hover
         function LeftArrowHover(x) {
-            x.src = "img/ChevronLeft.png";
+            x.src = "../img/ChevronLeft.png";
         }
 
         function LeftArrowNormal(x) {
-            x.src = "img/ChevronLeftGray.png";
+            x.src = "../img/ChevronLeftGray.png";
         }
         function RightArrowHover(x) {
-            x.src = "img/ChevronRight.png";
+            x.src = "../img/ChevronRight.png";
         }
 
         function RightArrowNormal(x) {
-            x.src = "img/ChevronRightGray.png";
+            x.src = "../img/ChevronRightGray.png";
         }
     </script>
 </body>
