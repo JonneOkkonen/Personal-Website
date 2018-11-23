@@ -2,7 +2,7 @@
 #description {
     font-size: 16px;
 }
-#appStoreIcon {
+.appStoreIcon {
     max-height: 40px;
     max-width: 40px;
 }
