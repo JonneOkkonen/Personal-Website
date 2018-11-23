@@ -134,6 +134,7 @@ a {
     text-align: center;
     font-size: 28px;
     margin: 0px;
+    color: #14243b;
 }
 /* Content Default Style */
 .content {
@@ -150,7 +151,7 @@ a {
 }
 #content1 {
     height: auto;
-    color: #a6a6a6;
+    color: #858585;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -211,7 +212,7 @@ a {
     margin-top: 0px;
     margin-bottom: 5px;
     font-weight: 600;
-    color: black;
+    color: #14243b;
 }
 .appDescription {
     font-weight: 100;
@@ -272,6 +273,7 @@ a {
 .contactMeText {
     margin: 0px;
     font-weight: 600;
+    color: #14243b;
 }
 /* Make ContactMe Responsive (under 500px) */
 @media screen and (max-width: 590px) {
