@@ -1,3 +1,4 @@
+/* Portfolio Page */
 #description {
     font-size: 16px;
 }
@@ -16,7 +17,7 @@
 #section3 {
     min-height: 450px;
 }
-/* APPLICATION DETAILS */
+/* Portfolio Items Detail View */
 .smallText {
     font-size: 16px;
     font-weight: 600;

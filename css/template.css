@@ -8,11 +8,11 @@ a {
     cursor: pointer;
     text-decoration: none;
 }
+/* Header Background Image */
 .header {
     background-image: url("../img/header_background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    /* filter: blur(0px); */
     background-position: center;
     height: 400px;
     min-height: 250px;
@@ -21,6 +21,7 @@ a {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
     z-index: 1;
 }
+/* Header Content Includes main title, description and social media links */
 .headerContent {
     position: absolute;
     width: 100%;
@@ -30,18 +31,22 @@ a {
     font-size: 20px;
     color: white;
 }
+/* Main Title */
 #mainHeading {
     margin-bottom: 0px;
 }
+/* Description Field under Main Title */
 #description {
     margin: 0px;
     font-weight: 600;
 }
+/* Social Media Logos */
 .socialMediaLogos {
     max-width: 25px;
     max-height: 22px;
     padding-left: 5px;
 }
+/* Buttons style */
 .button {
     background-color: #fed136;
     border-style: solid;
@@ -62,6 +67,7 @@ a {
     background-color: #feba36;
     border-color: #feba36;
 }
+/* Navigation Bar */
 .navbar {
     padding-top: 10px;
     margin: auto;
@@ -102,6 +108,7 @@ a {
         margin-right: 0%;
         width: 100%;
     }
+    /* Show the button that opens and closes the navbar */
     .navbar .icon {
         display: block;
         position: absolute;
@@ -114,7 +121,7 @@ a {
         text-align: center;
     }
 }
-/* Section Default */
+/* Section Default Style*/
 .section {
     background-color: darkorange;
     position: relative;
@@ -128,7 +135,7 @@ a {
     font-size: 28px;
     margin: 0px;
 }
-/* Content Default */
+/* Content Default Style */
 .content {
     margin: auto;
     height: auto;
@@ -136,7 +143,7 @@ a {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-/* Section1 Custom */
+/* Section1 */
 #section1 {
     height: auto;
     background-color: white;
@@ -266,15 +273,6 @@ a {
     margin: 0px;
     font-weight: 600;
 }
-/* Footer */
-.footer {
-    background-color: #17283c;
-    text-align: center;
-    height: 50px;
-    padding-top: 1px;
-    color: white;
-    font-weight: 500;
-}
 /* Make ContactMe Responsive (under 500px) */
 @media screen and (max-width: 590px) {
     .contactMeImg {
@@ -288,4 +286,13 @@ a {
         margin-top: 0px;
         margin-bottom: 20px;
     }
+}
+/* Footer */
+.footer {
+    background-color: #17283c;
+    text-align: center;
+    height: 50px;
+    padding-top: 1px;
+    color: white;
+    font-weight: 500;
 }
