@@ -1,0 +1,27 @@
+.sectionTitle {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.normalText {
+    font-weight: 100;
+    text-align: left;
+}
+.companyImg {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+#content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.hobbyImg {
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    padding: 10px;
+    padding-left: 0px;
+}
+#hobbyText {
+    display: inline-block;
+}
