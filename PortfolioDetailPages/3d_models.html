@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/template.css">
+    <link rel="stylesheet" type="text/css" href="../css/applications.css">
+    <title>Jonne Okkonen</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Portfolio, Personal Website">
+    <meta name="keywords" content="3d-modeling, blender">
+    <meta name="author" content="Jonne Okkonen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <!-- Navigation Bar -->
+        <div class="navbar responsive" id="TopNav">
+            <a href="../index.html" class="navbarTitle">Jonne Okkonen</a>
+            <a href="../aboutMe.html" class="navbarItem">About me</a>
+            <a href="../applications.html" class="navbarItem">Portfolio</a>
+            <!-- Navbar Collapse -->
+            <a href="javascript:void(0);" class="icon" onclick="collapseNavbar()"><i class="fa fa-bars"></i></a>
+        </div>
+        <!-- Header Content -->
+        <div class="headerContent">
+            <h1 id="mainHeading">3D-Models</h1>
+            <p id="description">Created by me in Blender</p><br>
+        </div>
+    </div>
+    <!-- Screenshot Viewer -->
+    <div class="section" id="section1">
+        <div class="content" style="padding-left: 20px; padding-right: 20px;">
+            <img src="../img/3d-models/boeing-747-400.jpg" alt="Boeing 747-400" class="galleryImg"/>
+            <p>Boeing 747-400</p>
+            <hr>
+            <img src="../img/3d-models/coffeecup.jpg" alt="Coffee Cup" class="galleryImg"/>
+            <p>CoffeeCup</p>
+            <hr>
+            <img src="../img/3d-models/desksetup.jpg" alt="DeskSetup" class="galleryImg"/>
+            <p>DeskSetup</p>
+            <hr>
+            <img src="../img/3d-models/macbookPro.jpg" alt="MacBookPro" class="galleryImg"/>
+            <p>Macbook Pro 13</p>
+            <hr>
+            <img src="../img/3d-models/neonSign.jpg" alt="Neon Sign" class="galleryImg"/>
+            <p>Neon Sign (website background)</p>
+            <hr>
+            <img src="../img/3d-models/speaker.jpg" alt="application Screenshot" class="galleryImg"/>
+            <p>Speaker</p>
+            <hr>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer" id="footer">
+        <p>© 2018-2020 Jonne Okkonen</p>
+    </div>
+    <script>
+        // Collapse Navbar
+        function collapseNavbar() {
+            var x = document.getElementById("TopNav");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+</html>
