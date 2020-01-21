@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/template.css">
+    <link rel="stylesheet" type="text/css" href="../css/applications.css">
+    <title>Jonne Okkonen</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Portfolio, HandWrittenNumbersDetection">
+    <meta name="keywords" content="Python,JavaScript,Software Developer,A.I,HandWrittenNumbersDetection">
+    <meta name="author" content="Jonne Okkonen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <!-- Navigation Bar -->
+        <div class="navbar responsive" id="TopNav">
+            <a href="../index.html" class="navbarTitle">Jonne Okkonen</a>
+            <a href="../aboutMe.html" class="navbarItem">About me</a>
+            <a href="../applications.html" class="navbarItem">Portfolio</a>
+            <!-- Navbar Collapse -->
+            <a href="javascript:void(0);" class="icon" onclick="collapseNavbar()"><i class="fa fa-bars"></i></a>
+        </div>
+        <!-- Header Content -->
+        <div class="headerContent">
+            <h1 id="mainHeading">HandWrittenNumbersDetection</h1>
+            <p id="description">Website</p><br>
+            <!-- Website -->
+            <a target="_blank" href="https://www.jonneokkonen.com/HandWrittenNumbersDetection">
+            <img src="../img/web-icon.png" alt="Link to HandWrittenNumbersDetection website" class="socialMediaLogos"/></a>
+            <a target="_blank" href="https://www.jonneokkonen.com/HandWrittenNumbersDetection" class="smallText">Website</a>
+            <!-- Source Code -->
+            <a target="_blank" href="https://github.com/JonneOkkonen/HandWrittenNumbersDetection">
+            <img src="../img/github-icon.png" alt="github icon" class="socialMediaLogos"/></a>
+            <a target="_blank" href="https://github.com/JonneOkkonen/HandWrittenNumbersDetection" class="smallText">Source Code</a>
+        </div>
+    </div>
+    <div class="section" id="section1">
+        <!-- Description -->
+        <div class="description">
+            <p>
+                This project was done for Datastructures and Algorithms class. It's a simple machine learning algorithm that detects numbers between 0-9. It was used to study how machine learning algorithms work and how they can be optimized. The full report can be <a href="../docs/tietorakenteet_ja_algoritmit_teko%C3%A4ly_ja_koneoppiminen.pdf">read here.</a><br>
+                <br>
+                The source code for this app is available in my GitHub-page.
+
+            </p>
+        </div>
+        <!-- Screenshots -->
+        <div class="content" style="padding-left: 20px; padding-right: 20px;">
+            <h2>Screenshots</h2>
+            <img src="../img/handwrittennumbersdetection-screenshot.JPG" alt="application Screenshot" class="galleryImg"/>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer" id="footer">
+        <p>© 2018-2020 Jonne Okkonen</p>
+    </div>
+    <script>
+        // Collapse Navbar
+        function collapseNavbar() {
+            var x = document.getElementById("TopNav");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+        
+        // Transform Controls for Screenshot Viewer
+        function transformLeft() {
+            var element = document.getElementById("contentFrame");
+            element.scrollLeft -= 60;
+        }
+        function transformRight() {
+            var element = document.getElementById("contentFrame");
+            element.scrollLeft += 60;
+        }
+        
+        // ArrowLeft/Right Hover
+        function LeftArrowHover(x) {
+            x.src = "../img/applications/ChevronLeft.png";
+        }
+
+        function LeftArrowNormal(x) {
+            x.src = "../img/applications/ChevronLeftGray.png";
+        }
+        function RightArrowHover(x) {
+            x.src = "../img/applications/ChevronRight.png";
+        }
+
+        function RightArrowNormal(x) {
+            x.src = "../img/applications/ChevronRightGray.png";
+        }
+    </script>
+</body>
+</html>
