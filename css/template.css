@@ -263,6 +263,7 @@ a {
 .contactMeIcons{
     max-width: 25px;
     max-height: 22px;
+    margin-right: 5px;
     object-fit: contain;
     vertical-align: middle;
 }
