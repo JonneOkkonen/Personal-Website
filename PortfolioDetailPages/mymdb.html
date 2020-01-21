@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/template.css">
+    <link rel="stylesheet" type="text/css" href="../css/applications.css">
+    <title>Jonne Okkonen</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Portfolio, MyMDB">
+    <meta name="keywords" content="PHP,JavaScript,Software Developer,Laravel,MyMDB">
+    <meta name="author" content="Jonne Okkonen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <!-- Navigation Bar -->
+        <div class="navbar responsive" id="TopNav">
+            <a href="../index.html" class="navbarTitle">Jonne Okkonen</a>
+            <a href="../aboutMe.html" class="navbarItem">About me</a>
+            <a href="../applications.html" class="navbarItem">Portfolio</a>
+            <!-- Navbar Collapse -->
+            <a href="javascript:void(0);" class="icon" onclick="collapseNavbar()"><i class="fa fa-bars"></i></a>
+        </div>
+        <!-- Header Content -->
+        <div class="headerContent">
+            <h1 id="mainHeading">MyMDB</h1>
+            <p id="description">Website</p><br>
+            <!-- Website -->
+            <a target="_blank" href="https://www.mymdb.jonneokkonen.com">
+            <img src="../img/web-icon.png" alt="Link to mymdb website" class="socialMediaLogos"/></a>
+            <a target="_blank" href="https://www.mymdb.jonneokkonen.com" class="smallText">Website</a>
+            <!-- Source Code -->
+            <a target="_blank" href="https://github.com/JonneOkkonen/MyMDBv2">
+            <img src="../img/github-icon.png" alt="github icon" class="socialMediaLogos"/></a>
+            <a target="_blank" href="https://github.com/JonneOkkonen/MyMDBv2" class="smallText">Source Code</a>
+        </div>
+    </div>
+    <div class="section" id="section1">
+        <!-- Description -->
+        <div class="description">
+            <p>
+                This project was done for Web-programming and Web-ServerProgramming courses. I created this website because I needed a better way to keep track of my movie collection and avoid buying duplicates. The site was done with PHP, JavaScript, and Laravel. Site data is saved to MySQL-database and the site uses that data with AJAX API-requests. Laravel handles logins, PHP is mainly used in API and JavaScript mainly handles all the logic in the site.<br>
+                <br>
+                The source code and documentation for this app is available in my GitHub-page.
+
+            </p>
+        </div>
+        <!-- Screenshots -->
+        <div class="content" style="padding-left: 20px; padding-right: 20px;">
+            <h2>Screenshots</h2>
+            <img src="../img/mymdbScreenshots/screenshot1.JPG" alt="application Screenshot" class="galleryImg"/>
+            <p>FrontPage after login</p>
+            <hr>
+            <img src="../img/mymdbScreenshots/screenshot2.JPG" alt="application Screenshot" class="galleryImg"/>
+            <p>Movies GridView</p>
+            <hr>
+            <img src="../img/mymdbScreenshots/screenshot3.JPG" alt="application Screenshot" class="galleryImg"/>
+            <p>Movies ListView</p>
+            <hr>
+            <img src="../img/mymdbScreenshots/screenshot4.JPG" alt="application Screenshot" class="galleryImg"/>
+            <p>Movie detail view</p>
+            <hr>
+            <img src="../img/mymdbScreenshots/screenshot5.JPG" alt="application Screenshot" class="galleryImg"/>
+            <p>Edit movie view</p>
+            <hr>
+            <img src="../img/mymdbScreenshots/screenshot6.JPG" alt="application Screenshot" class="galleryImg"/>
+            <p>Add movie view</p>
+            <hr>
+            <img src="../img/mymdbScreenshots/screenshot7.JPG" alt="application Screenshot" class="galleryImg"/>
+            <p>Sessions view</p>
+            <hr>
+            <img src="../img/mymdbScreenshots/screenshot8.JPG" alt="application Screenshot" class="galleryImg"/>
+            <p>Settings view</p>
+            <hr>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer" id="footer">
+        <p>© 2018-2020 Jonne Okkonen</p>
+    </div>
+    <script>
+        // Collapse Navbar
+        function collapseNavbar() {
+            var x = document.getElementById("TopNav");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+        
+        // Transform Controls for Screenshot Viewer
+        function transformLeft() {
+            var element = document.getElementById("contentFrame");
+            element.scrollLeft -= 60;
+        }
+        function transformRight() {
+            var element = document.getElementById("contentFrame");
+            element.scrollLeft += 60;
+        }
+        
+        // ArrowLeft/Right Hover
+        function LeftArrowHover(x) {
+            x.src = "../img/applications/ChevronLeft.png";
+        }
+
+        function LeftArrowNormal(x) {
+            x.src = "../img/applications/ChevronLeftGray.png";
+        }
+        function RightArrowHover(x) {
+            x.src = "../img/applications/ChevronRight.png";
+        }
+
+        function RightArrowNormal(x) {
+            x.src = "../img/applications/ChevronRightGray.png";
+        }
+    </script>
+</body>
+</html>
