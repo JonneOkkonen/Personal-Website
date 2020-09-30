@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179332870-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-179332870-1');
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/template.css">
+    <link rel="stylesheet" type="text/css" href="../css/applications.css">
+    <title>Jonne Okkonen</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Portfolio, MeijänMetsä">
+    <meta name="keywords" content="React,C#,Software Developer,Swagger,Meijanmetsa">
+    <meta name="author" content="Jonne Okkonen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <!-- Navigation Bar -->
+        <div class="navbar responsive" id="TopNav">
+            <a href="../index.html" class="navbarTitle">Jonne Okkonen</a>
+            <a href="../aboutMe.html" class="navbarItem">About me</a>
+            <a href="../applications.html" class="navbarItem">Portfolio</a>
+            <!-- Navbar Collapse -->
+            <a href="javascript:void(0);" class="icon" onclick="collapseNavbar()"><i class="fa fa-bars"></i></a>
+        </div>
+        <!-- Header Content -->
+        <div class="headerContent">
+            <h1 id="mainHeading">Meijän Metsä</h1>
+            <p id="description">Website</p><br>
+            <!-- Website -->
+            <a target="_blank" href="https://www.meijanmetsa.com">
+            <img src="../img/web-icon.png" alt="Link to mymdb website" class="socialMediaLogos"/></a>
+            <a target="_blank" href="https://www.meijanmetsa.com" class="smallText">Website</a>
+            <!-- Source Code -->
+            <a target="_blank" href="https://gitlab.labranet.jamk.fi/team-d-2020">
+            <img src="../img/github-icon.png" alt="github icon" class="socialMediaLogos"/></a>
+            <a target="_blank" href="https://gitlab.labranet.jamk.fi/team-d-2020" class="smallText">Source Code</a>
+        </div>
+    </div>
+    <div class="section" id="section1">
+        <!-- Description -->
+        <div class="description">
+            <p>
+                This project was done for Software production and testing courses. We had 5 people team working for it. Frontend was done with React and our own backend REST API was done with .NET Core. We used <a target="_blank" href="https://www.lipas.fi/etusivu">Lipas</a> service as datasource for this site. I was responsible for maintaining servers/CI Pipeline, backend and some of the frontend work. If you want to know more check the links below.<br>
+                <br>
+                Links:
+                <ul>
+                    <li><a target="_blank" href="http://team-d-2020.pages.labranet.jamk.fi/core/">Documentation</a></li>
+                    <li><a target="_blank" href="http://team-d-2020.pages.labranet.jamk.fi/site/">Team's Website</a></li>
+                    <li><a target="_blank" href="https://meijanmetsa.com">Meijän Metsä Demosite</a></li>
+                    <li><a target="_blank" href="https://gitlab.labranet.jamk.fi/team-d-2020/source-backend">Backend Source-Code</a></li>
+                    <li><a target="_blank" href="https://gitlab.labranet.jamk.fi/team-d-2020/source-frontend">Frontend Source-Code</a></li>
+                    <li><a target="_blank" href="https://www.api.meijanmetsa.com/swagger/index.html">Backend Swagger Documentation</a></li>
+                </ul>
+
+            </p>
+        </div>
+        <!-- Screenshots -->
+        <div class="content" style="padding-left: 20px; padding-right: 20px;">
+            <h2>Screenshots</h2>
+            <img src="../img/meijanmetsa/frontpage.PNG" alt="picture of frontpage" class="galleryImg"/>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer" id="footer">
+        <p>© 2018-2020 Jonne Okkonen</p>
+    </div>
+    <script>
+        // Collapse Navbar
+        function collapseNavbar() {
+            var x = document.getElementById("TopNav");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+        
+        // Transform Controls for Screenshot Viewer
+        function transformLeft() {
+            var element = document.getElementById("contentFrame");
+            element.scrollLeft -= 60;
+        }
+        function transformRight() {
+            var element = document.getElementById("contentFrame");
+            element.scrollLeft += 60;
+        }
+        
+        // ArrowLeft/Right Hover
+        function LeftArrowHover(x) {
+            x.src = "../img/applications/ChevronLeft.png";
+        }
+
+        function LeftArrowNormal(x) {
+            x.src = "../img/applications/ChevronLeftGray.png";
+        }
+        function RightArrowHover(x) {
+            x.src = "../img/applications/ChevronRight.png";
+        }
+
+        function RightArrowNormal(x) {
+            x.src = "../img/applications/ChevronRightGray.png";
+        }
+    </script>
+</body>
+</html>
