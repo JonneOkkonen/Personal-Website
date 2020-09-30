@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179332870-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-179332870-1');
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/template.css">
+    <link rel="stylesheet" type="text/css" href="../css/applications.css">
+    <title>Jonne Okkonen</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Portfolio, Stranded">
+    <meta name="keywords" content="C#,Unity,Software Developer,Game,Stranded">
+    <meta name="author" content="Jonne Okkonen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <!-- Navigation Bar -->
+        <div class="navbar responsive" id="TopNav">
+            <a href="../index.html" class="navbarTitle">Jonne Okkonen</a>
+            <a href="../aboutMe.html" class="navbarItem">About me</a>
+            <a href="../applications.html" class="navbarItem">Portfolio</a>
+            <!-- Navbar Collapse -->
+            <a href="javascript:void(0);" class="icon" onclick="collapseNavbar()"><i class="fa fa-bars"></i></a>
+        </div>
+        <!-- Header Content -->
+        <div class="headerContent">
+            <h1 id="mainHeading">Stranded On Mars</h1>
+            <p id="description">Website</p><br>
+            <!-- Website -->
+            <a target="_blank" href="Stranded/v1.0/index.html">
+            <img src="../img/web-icon.png" alt="Link to mymdb website" class="socialMediaLogos"/></a>
+            <a target="_blank" href="Stranded/v1.0/index.html" class="smallText">Play here</a>
+            <!-- Source Code -->
+            <a target="_blank" href="https://github.com/JonneOkkonen/StrandedOnMars/">
+            <img src="../img/github-icon.png" alt="github icon" class="socialMediaLogos"/></a>
+            <a target="_blank" href="https://github.com/JonneOkkonen/StrandedOnMars/" class="smallText">Source Code</a>
+        </div>
+    </div>
+    <div class="section" id="section1">
+        <!-- Description -->
+        <div class="description">
+            <p>
+                We made this game in part of Game Programming course. We did this in team of two people and we used Unity Engine. Check the Github page for documentation and more info about the game it self. If you want you can run the game in browser with WebGL or download the PC standalone version check the links below.<br>
+                <br>
+                The source code and documentation for this app is available in my GitHub-page.<br>
+                <ul>
+                    <li><a target="_blank" href="Stranded/v1.0/index.html">Test game in browser here</a></li>
+                    <li><a target="_blank" href="../files/Stranded/StandalonePC_v1.0.zip">Download PC Standalone version here</a></li>
+                </ul>
+
+            </p>
+        </div>
+        <!-- Screenshots -->
+        <div class="content" style="padding-left: 20px; padding-right: 20px;">
+            <h2>Screenshots</h2>
+            <img src="../img/stranded/menu.PNG" alt="GameMenu Screenshot" class="galleryImg"/>
+            <p>GameView</p>
+            <hr>
+            <img src="../img/stranded/game.png" alt="GameView Screenshot" class="galleryImg"/>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer" id="footer">
+        <p>© 2018-2020 Jonne Okkonen</p>
+    </div>
+    <script>
+        // Collapse Navbar
+        function collapseNavbar() {
+            var x = document.getElementById("TopNav");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+        
+        // Transform Controls for Screenshot Viewer
+        function transformLeft() {
+            var element = document.getElementById("contentFrame");
+            element.scrollLeft -= 60;
+        }
+        function transformRight() {
+            var element = document.getElementById("contentFrame");
+            element.scrollLeft += 60;
+        }
+        
+        // ArrowLeft/Right Hover
+        function LeftArrowHover(x) {
+            x.src = "../img/applications/ChevronLeft.png";
+        }
+
+        function LeftArrowNormal(x) {
+            x.src = "../img/applications/ChevronLeftGray.png";
+        }
+        function RightArrowHover(x) {
+            x.src = "../img/applications/ChevronRight.png";
+        }
+
+        function RightArrowNormal(x) {
+            x.src = "../img/applications/ChevronRightGray.png";
+        }
+    </script>
+</body>
+</html>

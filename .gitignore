@@ -1,0 +1,5 @@
+#Ignore files folder
+files/
+
+#Ignore Stranded Game files
+portfolio/Stranded/**
